@@ -33,15 +33,15 @@ export default function Contact() {
                         transition={{ delay: 0.5 }}
                         className="flex gap-8 mt-12"
                     >
-                        <a href="#" className="flex items-center gap-2 group">
+                        <a href="https://github.com/shubham21225" className="flex items-center gap-2 group">
                             <Github className="w-5 h-5 text-white/40 group-hover:text-white transition-colors" />
                             <span className="text-xs font-bold uppercase tracking-widest text-white/20 group-hover:text-white transition-colors">Github</span>
                         </a>
-                        <a href="#" className="flex items-center gap-2 group">
+                        <a href="https://www.linkedin.com/in/shubham-gupta-dev/" className="flex items-center gap-2 group">
                             <Linkedin className="w-5 h-5 text-white/40 group-hover:text-white transition-colors" />
                             <span className="text-xs font-bold uppercase tracking-widest text-white/20 group-hover:text-white transition-colors">Linkedin</span>
                         </a>
-                        <a href="#" className="flex items-center gap-2 group">
+                        <a href="https://twitter.com/shubham21225" className="flex items-center gap-2 group">
                             <Twitter className="w-5 h-5 text-white/40 group-hover:text-white transition-colors" />
                             <span className="text-xs font-bold uppercase tracking-widest text-white/20 group-hover:text-white transition-colors">Twitter</span>
                         </a>

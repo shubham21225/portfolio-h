@@ -2,10 +2,19 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
+import { useLenis } from "lenis/react";
 
 export default function PageTransition({ children }: { children: ReactNode }) {
     const pathname = usePathname();
+    const lenis = useLenis();
+
+    useEffect(() => {
+        if (lenis) {
+            lenis.scrollTo(0, { immediate: true });
+        }
+        window.scrollTo(0, 0);
+    }, [pathname, lenis]);
 
     return (
         <AnimatePresence mode="wait">
